@@ -4,6 +4,9 @@ RSpec.describe Customer, type: :model do
 
   it '# full_name - attributes override' do
     customer = create(:customer, name: "Mario Salles")
+    customer1 = create(:customer, name: "Mario Salles")
+    puts customer.email
+    puts customer1.email
     expect(customer.full_name).to eq("Sr. Mario Salles")
   end
 
