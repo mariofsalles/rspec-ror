@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://jsonplaceholder.typicode.com/posts/3
+    uri: "<API-URL>posts/3"
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 20 Feb 2019 09:33:36 GMT
+      - Wed, 20 Feb 2019 20:22:21 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=df05c0ad02753ad5f683c42a7abed703f1550655216; expires=Thu, 20-Feb-20
-        09:33:36 GMT; path=/; domain=.typicode.com; HttpOnly
+      - __cfduid=d1bbd9d31d6d32a6058ed69075b97e8d81550694141; expires=Thu, 20-Feb-20
+        20:22:21 GMT; path=/; domain=.typicode.com; HttpOnly
       X-Powered-By:
       - Express
       Vary:
@@ -40,7 +40,7 @@ http_interactions:
       Pragma:
       - no-cache
       Expires:
-      - Wed, 20 Feb 2019 13:33:36 GMT
+      - Thu, 21 Feb 2019 00:22:21 GMT
       X-Content-Type-Options:
       - nosniff
       Etag:
@@ -48,13 +48,13 @@ http_interactions:
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
-      - HIT
+      - REVALIDATED
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4abff8fc3db935a8-LHR
+      - 4ac3af4e6cfb34e2-LHR
     body:
       encoding: ASCII-8BIT
       string: |-
@@ -65,5 +65,5 @@ http_interactions:
           "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
         }
     http_version: 
-  recorded_at: Wed, 20 Feb 2019 09:33:36 GMT
+  recorded_at: Wed, 20 Feb 2019 20:22:21 GMT
 recorded_with: VCR 4.0.0
