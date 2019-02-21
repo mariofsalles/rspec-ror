@@ -66,4 +66,136 @@ http_interactions:
         }
     http_version: 
   recorded_at: Wed, 20 Feb 2019 20:22:21 GMT
+- request:
+    method: get
+    uri: "<API-URL>posts/4"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 21 Feb 2019 02:19:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3f65946f9cff4d27b6c13da29420bb6f1550715593; expires=Fri, 21-Feb-20
+        02:19:53 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, max-age=14400
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 21 Feb 2019 06:19:53 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"10e-HqG77o1RAmatkSwR36f4+Io6g1E"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - REVALIDATED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ac5bb0a3a876a2b-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "userId": 1,
+          "id": 4,
+          "title": "eum et est occaecati",
+          "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+        }
+    http_version: 
+  recorded_at: Thu, 21 Feb 2019 02:19:53 GMT
+- request:
+    method: get
+    uri: "<API-URL>posts/5"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 21 Feb 2019 02:20:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db746933e1c3b71fbe5f30257bb7ed74e1550715625; expires=Fri, 21-Feb-20
+        02:20:25 GMT; path=/; domain=.typicode.com; HttpOnly
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, max-age=14400
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 21 Feb 2019 06:20:25 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"e1-IivojO0CtPZmcMK0iydTbsfG7Wc"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - REVALIDATED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ac5bbd1d98fbc0e-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "userId": 1,
+          "id": 5,
+          "title": "nesciunt quas odio",
+          "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+        }
+    http_version: 
+  recorded_at: Thu, 21 Feb 2019 02:20:25 GMT
 recorded_with: VCR 4.0.0
