@@ -32,14 +32,24 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
+
+  # Shoulda Matchers
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
+  # Time Helper
+  config.include ActiveSupport::Testing::TimeHelpers
+  
   # Factory bot config
   config.include FactoryBot::Syntax::Methods
 
-  # Time Helper
-  config.include ActiveSupport::Testing::TimeHelpers
 
   
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
