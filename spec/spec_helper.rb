@@ -1,4 +1,4 @@
-require 'httparty'
+#require 'httparty'
 require 'webmock/rspec'
 
 VCR.configure do |config|
@@ -30,6 +30,7 @@ RSpec.configure do |config|
   #Random order
   config.order = 'random'
 
+  # removido por dar pau
   # config.before(:suite) do 
   #   FactoryBot.lint
   # end
