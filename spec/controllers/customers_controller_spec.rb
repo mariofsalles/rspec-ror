@@ -48,6 +48,12 @@ RSpec.describe CustomersController, type: :controller do
       expect{post :create, params: {customer: customer_params}}.to change(Customer, :count).by(1)
     end
 
+    it 'with invalid attributes' do
+      customer_params = attributes_for(:customer, address: nil)
+      sign_in @member
+      expect{post :create, params: {customer: customer_params}}.not_to change(Customer, :count)
+    end
+
     it 'responds a 200 response' do
       sign_in @member
       get :show, params: {id: @customer.id}
