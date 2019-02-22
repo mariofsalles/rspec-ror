@@ -46,7 +46,8 @@ RSpec.configure do |config|
 
   # Devise
   config.include Devise::Test::ControllerHelpers, :type => :controller
-
+  # Testing views with capybara
+  config.include Warden::Test::Helpers
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
