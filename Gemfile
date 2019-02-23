@@ -50,6 +50,7 @@ group :development, :test do
   gem 'vcr'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
+  gem 'rspec-json_expectations'
  
 end
 
