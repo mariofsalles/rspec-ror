@@ -17,8 +17,8 @@ RSpec.describe CustomersController, type: :controller do
   
     it 'responds a 302 response (not authorized)' do
       customer = create(:customer)
-      get :show, params: {id: customer.id}
-      expect(response).not_to have_http_status '302'
+      get :create, params: {customer: customer}
+      expect(response).not_to have_http_status '200'
     end
   end
 

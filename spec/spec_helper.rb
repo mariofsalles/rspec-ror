@@ -1,4 +1,4 @@
-#require 'httparty'
+# require 'httparty'
 require 'webmock/rspec'
 
 VCR.configure do |config|
