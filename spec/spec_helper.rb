@@ -1,5 +1,8 @@
-# require 'httparty'
+# require 'httparty' não precisou
 require 'webmock/rspec'
+# JSON Schema
+require 'json_matchers/rspec'
+JsonMatchers.schema_root = "spec/support/api/schemas"
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassetes'

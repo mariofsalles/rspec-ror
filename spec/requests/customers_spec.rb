@@ -1,6 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe "Customers", type: :request do
+  describe 'JSON SCHEMA' do
+    it 'json schema matcher' do
+      get '/customers/1.json'
+      p response.body
+      expect(response).to match_response_schema('customer')
+    end
+    
+  end
   describe "GET /customers" do
     it "works! 200 OK" do
       get customers_path

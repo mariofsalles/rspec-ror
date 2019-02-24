@@ -51,6 +51,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
   gem 'rspec-json_expectations'
+  gem 'json_matchers'
  
 end
 
